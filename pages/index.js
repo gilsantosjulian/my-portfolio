@@ -23,7 +23,7 @@ export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
   const reqInit = {
-    headers: { 
+    headers: {
       'Authorization': `token ${process.env.PAT}`
     }
   }
@@ -65,10 +65,10 @@ export default function Index({ projects, setTheme }) {
       <AppBar color={!trigger ? "transparent" : "inherit"} className={classes.appBar} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.root}>
-            { name }
+            {name}
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
-            {theme.palette.type === "dark" ? <Brightness7/> : <Brightness4/>}
+            {theme.palette.type === "dark" ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -76,9 +76,9 @@ export default function Index({ projects, setTheme }) {
       <Container>
         <Landing />
         <Skills />
-        <Projects data={projects}/>
-        <Experience/>
-        <About/>
+        <Projects projects={projects} />
+        <Experience />
+        <About />
       </Container>
     </div>
   );
