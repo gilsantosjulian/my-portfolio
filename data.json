@@ -1,7 +1,7 @@
 {
-    "name": "Kaustubh Odak",
+    "name": "Julian Gil",
     "landing": {
-        "title": "Hi, I'm Kaustubh",
+        "title": "Hi, I'm Julian",
         "subtitles": [
             "Full-stack developer 🌐",
             "Cross-platform developer 📱💻",
@@ -35,14 +35,9 @@
     "skills": {
         "Languages known": [
             "JavaScript",
-            "Java",
-            "C++",
-            "Python",
             "HTML5",
             "CSS3",
-            "TypeScript",
-            "Kotlin",
-            "Dart"
+            "TypeScript"
         ],
         "Frontend": [
             "React",
@@ -53,12 +48,12 @@
             "Vercel",
             "Material-UI",
             "antdesign",
-            "Bootstrap"
+            "Bootstrap",
+            "Styled-components"
         ],
         "Backend, Database and Cloud": [
             "Node.js",
             "Express",
-            "FastAPI",
             "MongoDB",
             "MySQL",
             "PostgreSQL",
@@ -68,23 +63,13 @@
             },
             "Heroku",
             "Firebase"
-        ],
-        "Mobile": [
-            {
-                "alt": "React_Native",
-                "icon": "react",
-                "backgroundColor": "#424242"
-            },
-            "Expo",
-            "Android",
-            "Flutter"
         ]
     },
     "projects": {
-        "baseURI": "https://api.github.com/repos/kausko/",
+        "baseURI": "https://api.github.com/repos/gilsantosjulian/",
         "repositories": [
-            "Genrealize",
-            "Portfolio",
+            "Pugstagram",
+            "My-Portfolio",
             "cosmicom",
             "Discord-Google-Drive-Bot",
             "GitHits",
