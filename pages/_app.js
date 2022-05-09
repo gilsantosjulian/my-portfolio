@@ -6,7 +6,7 @@ import { darkTheme, lightTheme } from '../src/theme';
 
 export default function MyApp({ Component, pageProps }) {
 
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: light)')
   const [theme, setTheme] = useState(
     prefersDarkMode ? darkTheme : lightTheme
   )
@@ -31,7 +31,7 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} setTheme={setTheme}/>
+        <Component {...pageProps} setTheme={setTheme} />
       </MuiThemeProvider>
     </React.Fragment>
   );
