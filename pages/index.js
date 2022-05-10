@@ -5,6 +5,7 @@ import Skills from '../src/Skills';
 import Projects from '../src/Projects';
 import Experience from '../src/Experience';
 import About from '../src/About';
+import AboutMe from '../src/AboutMe';
 import data from '../data.json';
 import { darkTheme, lightTheme } from '../src/theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
@@ -68,18 +69,17 @@ export default function Index({ projects, setTheme }) {
             {name}
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
-            {theme.palette.type === "dark" ? <Brightness7 /> : <Brightness4 />}
+            {theme.palette.type === "dark" ? <Brightness4 /> : <Brightness7 />}
           </IconButton>
         </Toolbar>
       </AppBar>
       <Toolbar className={classes.toolbar} />
-      <Container>
-        <Landing />
-        <Skills />
-        <Projects projects={projects} />
-        <Experience />
-        <About />
-      </Container>
+      <Landing />
+      <AboutMe />
+      <Skills />
+      <Projects projects={projects} />
+      <Experience />
+      <About />
     </div>
   );
 }
