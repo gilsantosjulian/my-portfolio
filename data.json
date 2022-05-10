@@ -1,7 +1,7 @@
 {
     "name": "Julian Gil",
     "landing": {
-        "title": "Hi, I'm Julian",
+        "title": "Designer, Front-end Developer",
         "subtitles": [
             "Full-stack developer 🌐",
             "Cross-platform developer 📱💻",
@@ -11,24 +11,19 @@
         ],
         "professionalDetails": [
             {
-                "alt": "kaustubh-odak",
+                "alt": "julian-Gil",
                 "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/kaustubh-odak/"
-            },
+                "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/"
+            }, 
             {
-                "alt": "kausko",
-                "icon": "stackoverflow",
-                "link": "https://stackoverflow.com/users/15832433/kausko"
-            },
-            {
-                "alt": "kausko",
+                "alt": "gilsantosjulian",
                 "icon": "github",
-                "link": "https://github.com/kausko"
+                "link": "https://github.com/gilsantosjulian"
             },
             {
                 "alt": "Email",
                 "icon": "gmail",
-                "link": "mailto:iam@kaustubhodak.me,kaustubhodak1@gmail.com"
+                "link": "mailto:iam@kaustubhodak.me,gilsantosjulian@gmail.com"
             }
         ]
     },
@@ -131,6 +126,7 @@
         ]
     },
     "about": {
+        "title": "Hi, I'm Julian. Nice to meet you",
         "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
         "picture": "/profile.jpg",
         "social": [
