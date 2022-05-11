@@ -3,8 +3,7 @@ import {
   Grid,
   makeStyles,
   Typography,
-  Tooltip,
-  Avatar
+  useTheme,
 } from "@material-ui/core";
 import data from '../data.json'
 import simpleIcons from 'simple-icons'
@@ -64,6 +63,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function About() {
   const classes = useStyles()
+  const theme = useTheme()
 
   return (
     <Grid
@@ -72,6 +72,11 @@ export default function About() {
       justify="center"
       alignItems="center"
       className={classes.cont}
+      // TODO: Improve with classnames, and also the colors
+      style={{
+        color: theme.palette.type !== "dark" ? 'white' : '#212121',
+        backgroundColor: theme.palette.type === "dark" ? 'white' : '#4EA0A8'
+      }}
     >
       <Container className={classes.description}>
         <Typography
