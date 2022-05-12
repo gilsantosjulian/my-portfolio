@@ -126,8 +126,8 @@
         ]
     },
     "about": {
-        "title": "Hi, I'm Julian. Nice to meet you",
-        "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
+        "title": "Hi, I'm Julian. Nice to meet you.",
+        "description": "Creative Front-End developer with over 6 years of experience providing high-impact web solutions for Fintech, Data Analysis Startups, and Software Factory companies. Proficient in HTML, CSS, browser DOM, JavaScript, ES6, React js, Next js, and Node js.",
         "picture": "/profile.jpg",
         "social": [
             {
@@ -164,6 +164,16 @@
                     "paper": "#303030",
                     "default": "#212121"
                 }
+            }
+        },
+        "primary": {
+            "palette": {
+                "type": "primary",
+                "background": {
+                    "paper": "#fff",
+                    "default": "#fafafa"
+                },
+                "color": "#4EA0A8"
             }
         }
     }
