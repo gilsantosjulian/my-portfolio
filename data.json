@@ -1,75 +1,75 @@
 {
     "name": "Julian Gil",
     "landing": {
-        "title": "Designer, Front-end Developer",
-        "subtitles": [
-            "Full-stack developer 🌐",
-            "Cross-platform developer 📱💻",
-            "Exploring cloud ☁️",
-            "Beginner in devops ♾️",
-            "Just getting started 📈"
-        ],
-        "professionalDetails": [
-            {
-                "alt": "julian-Gil",
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/"
-            }, 
-            {
-                "alt": "gilsantosjulian",
-                "icon": "github",
-                "link": "https://github.com/gilsantosjulian"
-            },
-            {
-                "alt": "Email",
-                "icon": "gmail",
-                "link": "mailto:iam@kaustubhodak.me,gilsantosjulian@gmail.com"
-            }
-        ]
+      "title": "Designer, Front-end Developer",
+      "subtitles": [
+        "Full-stack developer 🌐",
+        "Cross-platform developer 📱💻",
+        "Exploring cloud ☁️",
+        "Beginner in devops ♾️",
+        "Just getting started 📈"
+      ],
+      "professionalDetails": [
+        {
+          "alt": "julian-Gil",
+          "icon": "linkedin",
+          "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/"
+        }, 
+        {
+          "alt": "gilsantosjulian",
+          "icon": "github",
+          "link": "https://github.com/gilsantosjulian"
+        },
+        {
+          "alt": "Email",
+          "icon": "gmail",
+          "link": "mailto:iam@kaustubhodak.me,gilsantosjulian@gmail.com"
+        }
+      ]
     },
     "skills": {
-        "Languages known": [
-            "JavaScript",
-            "HTML5",
-            "CSS3",
-            "TypeScript"
-        ],
-        "Frontend": [
-            "React",
-            "Redux",
-            "Next.js",
-            "Gatsby",
-            "Netlify",
-            "Vercel",
-            "Material-UI",
-            "antdesign",
-            "Bootstrap",
-            "Styled-components"
-        ],
-        "Backend, Database and Cloud": [
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "MySQL",
-            "PostgreSQL",
-            {
-                "alt": "Azure",
-                "icon": "microsoftazure"
-            },
-            "Heroku",
-            "Firebase"
-        ]
+      "Languages known": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "TypeScript"
+      ],
+      "Frontend": [
+        "React",
+        "Redux",
+        "Next.js",
+        "Gatsby",
+        "Netlify",
+        "Vercel",
+        "Material-UI",
+        "antdesign",
+        "Bootstrap",
+        "Styled-components"
+      ],
+      "Backend, Database and Cloud": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        {
+          "alt": "Azure",
+          "icon": "microsoftazure"
+        },
+        "Heroku",
+        "Firebase"
+      ]
     },
     "projects": {
-        "baseURI": "https://api.github.com/repos/gilsantosjulian/",
-        "repositories": [
-            "Pugstagram",
-            "My-Portfolio",
-            "cosmicom",
-            "Discord-Google-Drive-Bot",
-            "GitHits",
-            "1DBM"
-        ]
+      "baseURI": "https://api.github.com/repos/gilsantosjulian/",
+      "repositories": [
+        "Pugstagram",
+        "My-Portfolio",
+        "cosmicom",
+        "Discord-Google-Drive-Bot",
+        "GitHits",
+        "1DBM"
+    ]
     },
     "experience": {
         "Work Experience": [
@@ -126,26 +126,44 @@
         ]
     },
     "about": {
-        "title": "Hi, I'm Julian. Nice to meet you.",
-        "description": "Creative Front-End developer with over 6 years of experience providing high-impact web solutions for Fintech, Data Analysis Startups, and Software Factory companies. Proficient in HTML, CSS, browser DOM, JavaScript, ES6, React js, Next js, and Node js.",
-        "picture": "/profile.jpg",
-        "social": [
-            {
-                "alt": "kaustubh._.o",
-                "icon": "instagram",
-                "link": "https://www.instagram.com/kaustubh._.o/"
-            },
-            {
-                "alt": "KO_272",
-                "icon": "twitter",
-                "link": "https://twitter.com/KO_272"
-            },
-            {
-                "alt": "kaustubh#4489",
-                "icon": "discord",
-                "link": "https://discord.com/"
-            }
-        ]
+      "title": "Hi, I'm Julian. Nice to meet you.",
+      "description": "Creative Front-End developer with over 6 years of experience providing high-impact web solutions for Fintech, Data Analysis Startups, and Software Factory companies. Proficient in HTML, CSS, browser DOM, JavaScript, ES6, React js, Next js, and Node js.",
+      "picture": "/profile.jpg",
+      "mainSkills": [
+        {
+          "title": "Designer",
+          "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+          "alt": "julian-Gil",
+          "stackTitle": "Design stack",
+          "icon": "DesignServicesOutlined",
+          "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/"
+        }, 
+        {
+          "title": "Front-end Developer",
+          "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+          "stackTitle": "Dev stack",
+          "alt": "gilsantosjulian",
+          "icon": "WebOutlined",
+          "link": "https://github.com/gilsantosjulian"
+        }
+      ],
+      "social": [
+        {
+          "alt": "kaustubh._.o",
+          "icon": "instagram",
+          "link": "https://www.instagram.com/kaustubh._.o/"
+        },
+        {
+          "alt": "KO_272",
+          "icon": "twitter",
+          "link": "https://twitter.com/KO_272"
+        },
+        {
+          "alt": "kaustubh#4489",
+          "icon": "discord",
+          "link": "https://discord.com/"
+        }
+      ]
     },
     "theme": {
         "light": {
