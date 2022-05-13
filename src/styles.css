@@ -1,0 +1,7 @@
+@import "./About/About.css";
+
+html {
+  font-size: 62.5%; /* Relative font size. 1px -> 0.1rem */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
