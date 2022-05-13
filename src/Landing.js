@@ -1,37 +1,45 @@
+import React from 'react'
 import {
   Avatar,
   Container,
   Fade,
   Grid,
-  Hidden,
   makeStyles,
   Tooltip,
   Typography,
   useMediaQuery,
   useTheme,
   Zoom
-} from "@material-ui/core";
-import ReactTyped from "react-typed";
-import clsx from "clsx";
+} from '@material-ui/core';
+import ReactTyped from 'react-typed';
+import clsx from 'clsx';
 import Image from 'next/image'
 import simpleIcons from 'simple-icons'
 import data from '../data.json'
-import { iconify } from "./util";
-import Cancel from "@material-ui/icons/Cancel";
+import { iconify } from './util';
+import Cancel from '@material-ui/icons/Cancel';
 const { landing } = data
 
 const professionalDetails = landing.professionalDetails.map(({ alt, icon, link }) => {
   const ic = simpleIcons.get(iconify(icon)) || {
     hex: '424242',
-    component: <Cancel color="white" fontSize={36} />
+    component: <Cancel color='white' fontSize={36} />
   }
   return {
     alt,
     backgroundColor: '#' + ic.hex,
-    icon: ic.component || <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" xmlnsXlink="http://www.w3.org/1999/xlink">
-      <title>{icon}</title>
-      <path d={ic.path} fill="white" />
-    </svg>,
+    icon: ic.component ||
+      <svg
+        role='img'
+        viewBox='0 0 24 24'
+        xmlns='http://www.w3.org/2000/svg'
+        height='100%'
+        width='100%'
+        xmlnsXlink='http://www.w3.org/1999/xlink'
+      >
+        <title>{icon}</title>
+        <path d={ic.path} fill='white' />
+      </svg>,
     link
   }
 })
@@ -43,7 +51,7 @@ professionalDetails.forEach(({ alt, backgroundColor }) => {
 
 const useStyles = makeStyles(theme => ({
   cont: {
-    minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
+    minHeight: `calc(100vh - ${theme.spacing(25)}px)`,
     paddingBottom: theme.spacing(10)
   },
   subtitle: {
@@ -55,24 +63,35 @@ const useStyles = makeStyles(theme => ({
     width: theme.spacing(8),
     padding: theme.spacing(2)
   },
+  textAlign: {
+    textAlign: 'center',
+    justifyContent: 'center'
+  },
   ...iobj
 }))
 
-export default function Landing() {
-
+const Landing = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const mdDown = useMediaQuery(theme.breakpoints.down('sm'));
+  const mdDown = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Container>
-      <Grid container justify="center" alignItems="center" className={classes.cont}>
+    <Container component='section'>
+      <Grid
+        container
+        justify='center'
+        alignItems='center'
+        className={clsx([classes.cont, mdDown && classes.textAlign])}
+      >
         <Grid item xs={12} lg={6}>
-          <Typography variant={mdDown ? "h2" : "h1"}>
+          <Typography variant={mdDown ? 'h2' : 'h1'}>
             {landing.title}
           </Typography>
-          <Typography variant={mdDown ? "h5" : "h4"} component="h2" className={classes.subtitle}>
-
+          <Typography
+            variant={mdDown ? 'h5' : 'h4'}
+            component='h2'
+            className={classes.subtitle}
+          >
             <ReactTyped
               strings={landing.subtitles}
               typeSpeed={40}
@@ -80,13 +99,18 @@ export default function Landing() {
               loop
             />
           </Typography>
-          <Grid container direction="row" spacing={2}>
+          <Grid
+            container
+            className={mdDown && classes.textAlign}
+            direction='row'
+            spacing={2}
+          >
             {
               professionalDetails.map(({ alt, icon, link }, i) =>
                 <Grid item key={i}>
-                  <a href={link} target="_blank" rel="noopener noreferrer">
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
                     <Zoom in={true} style={{ transitionDelay: `${100 * i}ms` }}>
-                      <Tooltip title={alt} placement="top">
+                      <Tooltip title={alt} placement='top'>
                         <Avatar className={clsx([classes.avatar, classes[alt]])}>
                           {icon}
                         </Avatar>
@@ -99,19 +123,19 @@ export default function Landing() {
           </Grid>
         </Grid>
 
-        <Hidden mdDown>
-          <Fade in={true} style={{ transitionDelay: '100ms' }}>
-            <Grid item lg={6}>
-              <Image
-                src="/landing.svg"
-                alt="Landing"
-                width="900.94"
-                height="787"
-              />
-            </Grid>
-          </Fade>
-        </Hidden>
+        <Fade in={true} style={{ transitionDelay: '100ms' }}>
+          <Grid item lg={6}>
+            <Image
+              src='/landing.svg'
+              alt='Landing'
+              width='900.94'
+              height='787'
+            />
+          </Grid>
+        </Fade>
       </Grid>
     </Container>
   )
 }
+
+export default Landing
