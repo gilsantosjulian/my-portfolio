@@ -1,0 +1,60 @@
+.root {
+  max-width: 100%;
+}
+
+.description__container {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+  padding-bottom: 25.6rem;
+}
+
+.description__content {
+  width: 90%;
+}
+
+.description__copy {
+  margin: 0 auto;
+  
+}
+
+@media (min-width: 1024px) {
+  .description__container {
+    padding: 14.4rem 0;
+    padding-bottom: 28.8rem;
+  }
+
+  .description__content {
+    width: 60%;
+  }
+}
+
+/* Main skills */
+.skill {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 3.5rem;
+  flex-direction: column;
+  border-bottom: 1px solid #E6ECF8;
+}
+
+.skill__container--column {
+  flex-direction: column;
+}
+
+.skill__icon {
+  color: #4EA0A8;
+  width: auto !important;
+  height: 4.8rem !important;
+}
+
+.skill__title {
+  margin: 2.4rem 0;
+}
+
+@media (min-width: 1024px) {
+  .skill {
+    border-bottom: 0;
+    border-right: 1px solid #E6ECF8;
+  }
+}
