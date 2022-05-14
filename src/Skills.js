@@ -65,8 +65,7 @@ const useStyles = makeStyles(theme => ({
   ...iobj
 }))
 
-export default function Skills() {
-
+const Skills = () => {
   const classes = useStyles()
   const theme = useTheme()
   const mdDown = useMediaQuery(theme.breakpoints.down('md'))
@@ -126,3 +125,5 @@ export default function Skills() {
     </Container>
   )
 }
+
+export default Skills
