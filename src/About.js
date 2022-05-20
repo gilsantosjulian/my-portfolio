@@ -1,3 +1,4 @@
+import React from 'react'
 import { Grid, makeStyles, Typography, Tooltip, Avatar } from "@material-ui/core";
 import data from '../data.json'
 import simpleIcons from 'simple-icons'
@@ -7,19 +8,19 @@ import { iconify } from "./util";
 import Cancel from "@material-ui/icons/Cancel";
 const { about } = data
 
-const dpx = about.social.length*10 - 2
+const dpx = about.social.length * 10 - 2
 
 const socialDetails = about.social.map(({ alt, icon, link }) => {
     const ic = simpleIcons.get(iconify(icon)) || {
         hex: '424242',
-        component: <Cancel color="white" fontSize={36}/>
+        component: <Cancel color="white" fontSize={36} />
     }
     return {
         alt,
         backgroundColor: '#' + ic.hex,
         icon: ic.component || <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" xmlnsXlink="http://www.w3.org/1999/xlink">
             <title>{icon}</title>
-            <path d={ic.path} fill="white"/>
+            <path d={ic.path} fill="white" />
         </svg>,
         link
     }
@@ -51,7 +52,7 @@ const useStyles = makeStyles(theme => ({
 export default function About() {
     const classes = useStyles()
 
-    return(
+    return (
         <Grid direction="row" container justify="center" alignItems="center" className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant="h2" gutterBottom component="p">
@@ -59,7 +60,7 @@ export default function About() {
                 </Typography>
                 <Typography variant="h5" gutterBottom component="p">
                     {about.description}
-                </Typography>                
+                </Typography>
             </Grid>
             <Grid container direction="column" item xs={12} lg={6} spacing={2} justify="center" alignItems="center">
                 <Grid item xs={12}>
@@ -72,20 +73,20 @@ export default function About() {
                     </Avatar>
                 </Grid>
                 <Grid container item xs={12} spacing={2} justify="center">
-                {
-                    socialDetails.map(({ alt, icon, link }, i) =>
-                        <Grid item key={i}>
-                            <a href={link} target="_blank" rel="noopener noreferrer">
-                                <Tooltip title={alt} placement="top">
-                                    <Avatar variant="rounded" className={clsx([classes.avatar, classes[alt]])}>
-                                        {icon}
-                                    </Avatar>
-                                </Tooltip>
-                            </a> 
-                        </Grid>
-                    )
-                }
-                </Grid>                
+                    {
+                        socialDetails.map(({ alt, icon, link }, i) =>
+                            <Grid item key={i}>
+                                <a href={link} target="_blank" rel="noopener noreferrer">
+                                    <Tooltip title={alt} placement="top">
+                                        <Avatar variant="rounded" className={clsx([classes.avatar, classes[alt]])}>
+                                            {icon}
+                                        </Avatar>
+                                    </Tooltip>
+                                </a>
+                            </Grid>
+                        )
+                    }
+                </Grid>
             </Grid>
         </Grid>
     )
