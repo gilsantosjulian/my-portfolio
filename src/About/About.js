@@ -14,48 +14,55 @@ import * as Icons from '@mui/icons-material';
 
 const { about } = data
 
-const useStyles = makeStyles(theme => {
-  console.log({
-    aux: theme.breakpoints.down('sm')
-  });
-  return ({
-    root: {
-      backgroundColor: theme.palette.type === 'dark' ? 'white' : '#4EA0A8',
-      maxWidth: '100%',
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.type === 'dark' ? 'white' : '#4EA0A8',
+    maxWidth: '100%',
+  },
+  description__title: {
+    marginBottom: '2.4rem',
+  },
+  skill__container: {
+    backgroundColor: 'white',
+    borderRadius: '1.2rem',
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    padding: 0,
+    '& > :last-child': {
+      border: 0,
     },
-    description__title: {
-      marginBottom: '2.4rem',
-    },
-    skill__container: {
-      backgroundColor: 'white',
-      borderRadius: '1.2rem',
-      display: 'flex',
-      width: '100%',
-      height: '100%',
-      padding: 0,
-      '& > :last-child': {
-        border: 0,
-      },
-    },
-    skill__title: {
-      color: '#141c3a',
-      fontSize: '2.4rem',
-      margin: '2.4rem 0',
-    },
-    skill__description: {
-      fontSize: '1.8rem',
-      marginBottom: '3.6rem',
-    },
-    stack__title: {
-      color: '#4EA0A8',
-      fontSize: '1.8rem',
-      marginBottom: '0.8rem',
-    },
-    descriptionContainer: {
-      color: theme.palette.type !== 'dark' ? 'white' : '#212121',
-    },
-  })
-})
+  },
+  skill__title: {
+    color: '#141c3a',
+    fontSize: '2.4rem',
+    margin: '2.4rem 0',
+  },
+  skill__description: {
+    fontSize: '1.8rem',
+    marginBottom: '3.6rem',
+  },
+  stack__title: {
+    color: '#4EA0A8',
+    fontSize: '1.8rem',
+    marginBottom: '0.8rem',
+  },
+  stack__tool_list: {
+    fontSize: '1.8rem',
+    margin: 0,
+    padding: 0,
+    textAlign: 'center',
+  },
+  stack__tool: {
+    color: '#141c3a',
+    fontSize: '1.6rem',
+    marginBottom: '0.45rem',
+    listStyle: 'none'
+  },
+  descriptionContainer: {
+    color: theme.palette.type !== 'dark' ? 'white' : '#212121',
+  },
+}))
 
 export const About = () => {
   const classes = useStyles()
@@ -135,13 +142,22 @@ export const About = () => {
                 >
                   {stackTitle}
                 </Typography>
-                <Typography
-                  align='center'
-                  variant='p'
-                  className={clsx([classes.stack__description, 'stack__description'])}
+                <ul
+                  className={classes.stack__tool_list}
                 >
-                  {description}
-                </Typography>
+                  {stack.map((tool) =>
+                    <li
+                      className={classes.stack__tool}
+                    >
+                      <Typography
+                        align='center'
+                        variant='p'
+                      >
+                        {tool}
+                      </Typography>
+                    </li>
+                  )}
+                </ul>
               </Box>
             )
           }
