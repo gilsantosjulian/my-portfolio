@@ -136,15 +136,31 @@
           "alt": "julian-Gil",
           "stackTitle": "Design stack",
           "icon": "DesignServicesOutlined",
-          "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/"
+          "link": "https://www.linkedin.com/in/julian-andres-gil-santos-592501120/",
+          "stack": [
+            "Figma",
+            "Sketch",
+            "Illustrator",
+            "Photoshop",
+            "Balsamiq Mockups",
+            "Zeplin"
+          ]
         }, 
         {
           "title": "Front-end Developer",
-          "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+          "description": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
           "stackTitle": "Dev stack",
           "alt": "gilsantosjulian",
           "icon": "WebOutlined",
-          "link": "https://github.com/gilsantosjulian"
+          "link": "https://github.com/gilsantosjulian",
+          "stack": [
+            "React",
+            "Typescript",
+            "Next.js",
+            "Git",
+            "CSS",
+            "HTML"
+          ]
         }
       ],
       "social": [
