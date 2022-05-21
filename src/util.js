@@ -2,28 +2,28 @@ export function iconify(input = '') {
     const replacers = [
         {
             in: /\+/g,
-            out: "plus"
+            out: 'plus',
         },
         {
             in: /\./g,
-            out: "-dot-"
+            out: '-dot-',
         },
         {
             in: /&/g,
-            out: "-and-"
+            out: '-and-',
         },
         {
             in: ' ',
-            out: ''
+            out: '',
         },
         {
             in: '_',
-            out: ''
-        }
-    ]
-    let output = input.toLowerCase()
-    replacers.forEach(replacer => {
-        output = output.replace(replacer.in, replacer.out)
-    })
-    return output
+            out: '',
+        },
+    ];
+    let output = input.toLowerCase();
+    replacers.forEach((replacer) => {
+        output = output.replace(replacer.in, replacer.out);
+    });
+    return output;
 }
