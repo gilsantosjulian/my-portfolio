@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '0.45rem',
     listStyle: 'none'
   },
-  descriptionContainer: {
+  description__container: {
     color: theme.palette.type !== 'dark' ? 'white' : '#212121',
   },
 }))
@@ -76,7 +76,7 @@ export const About = () => {
         component='section'
       >
         <div
-          className={clsx([classes.descriptionContainer, 'description__container'])}
+          className={clsx([classes.description__container, 'description__container'])}
         >
           <div className='description__content'>
             <Typography
