@@ -1,4 +1,5 @@
 @import "./About/About.css";
+@import "./Projects/Projects.css";
 
 html {
   font-size: 62.5%; /* Relative font size. 1px -> 0.1rem */
