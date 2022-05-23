@@ -10,6 +10,7 @@
 }
 
 .description__content {
+  max-width: 120rem;
   width: 90%;
 }
 
