@@ -36,15 +36,21 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '1.5rem',
     width: '32%',
   },
-  card: {
-    height: '100%',
+  project__description: {
+    color: 'white',
+    fontSize: '2.4rem',
+    marginBottom: '1.8rem',
   },
-  cardHeader: {
-    paddingTop: 0
-  },
-  cardActionArea: {
-    height: '100%',
-  },
+  project__cta: {
+    borderRadius: '3rem',
+    border: '2px solid white',
+    color: 'white',
+    fontSize: '1.8rem',
+    padding: '1.5rem',
+    '&:hover': {
+      backgroundColor: 'red'
+    }
+  }
 }))
 
 const ProjectCard = ({
@@ -58,28 +64,41 @@ const ProjectCard = ({
   country,
   url,
   thumbnail
-}, i) =>
-  <div className='projects__card'>
-    <div className='projects__figure'>
-      <CardMedia
-        className='projects__image'
-        component="img"
-        height="280"
-        image={thumbnail}
-        alt="green iguana"
-        style={{ borderRadius: '1.5rem', }}
-      />
-      {/* TODO: apply in a good way the colors */}
-      <div className="projects__overlay" style={{ backgroundColor: '#4EA0A8' }}></div>
-      <div class="projects__content">
-        <div
-          class="text"
-          style={{ color: 'white' }}
-        >John Doe
+}, i) => {
+  const classes = useStyles()
+
+  return (
+    <div className='projects__card'>
+      <div className='projects__figure'>
+        <CardMedia
+          className='projects__image'
+          component="img"
+          height="280"
+          image={thumbnail}
+          alt="green iguana"
+          style={{ borderRadius: '1.5rem', }}
+        />
+        {/* TODO: apply in a good way the colors */}
+        <div className="projects__overlay"></div>
+        <div class="projects__content">
+          <Typography
+            align='center'
+            className={clsx(classes.project__description)}
+            variant='h1'
+          >
+            John Doe
+          </Typography>
+          <Link
+            className={clsx(classes.project__cta)}
+            href="mailto:gilsantosjulian@gmail.com"
+            underline='none'
+          > Visit website
+          </Link>
         </div>
       </div>
     </div>
-  </div>
+  )
+}
 
 const Projects = ({ projects }) => {
   const classes = useStyles()
