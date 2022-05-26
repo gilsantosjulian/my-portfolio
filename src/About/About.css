@@ -16,18 +16,6 @@
 
 .description__copy {
   margin: 0 auto;
-  
-}
-
-@media (min-width: 1024px) {
-  .description__container {
-    padding: 14.4rem 0;
-    padding-bottom: 28.8rem;
-  }
-
-  .description__content {
-    width: 60%;
-  }
 }
 
 /* Main skills */
@@ -54,6 +42,15 @@
 }
 
 @media (min-width: 1024px) {
+  .description__container {
+    padding: 14.4rem 0;
+    padding-bottom: 28.8rem;
+  }
+
+  .description__content {
+    width: 60%;
+  }
+
   .skill {
     border-bottom: 0;
     border-right: 1px solid #E6ECF8;

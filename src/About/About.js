@@ -18,9 +18,15 @@ const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.type === 'dark' ? 'white' : '#4EA0A8',
     maxWidth: '100%',
+    padding: 0,
   },
   description__title: {
+    fontWeight: 'bold',
     marginBottom: '2.4rem',
+  },
+  description__copy: {
+    fontWeight: 'bold',
+    margin: '0 auto',
   },
   skill__container: {
     backgroundColor: 'white',
@@ -88,11 +94,12 @@ export const About = () => {
             </Typography>
             <Typography
               align='center'
-              className='description__copy'
+              className={clsx([classes.description__copy, 'description__copy'])}
               variant='h5'
               component='p'
               style={{
-                margin: '0 auto'
+                margin: '0 auto',
+                fontWeight: 'bold',
               }}
             >
               {about.description}
