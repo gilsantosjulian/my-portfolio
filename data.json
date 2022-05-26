@@ -71,18 +71,23 @@
         "1DBM"
       ]
     },
+    "experiencesTitle": "My Recent Work",
+    "experiencesDescription": "Here are a few design projects I've worked on recently. Want to see more?",
     "experiences": [
       {
-        "organization": "CloudDFN LLP",
-        "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2020-07-20",
-        "endDate": "2021-01-20",
-        "city": "Mumbai",
-        "state": "Maharashtra",
-        "country": "India",
         "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/CDFN.jfif"
+        "thumbnail": "/CDFN.jfif",
+        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+      },
+      {
+        "url": "https://www.linkedin.com/company/clouddfn-llp/",
+        "thumbnail": "/PISB.jfif",
+        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+      },
+      {
+        "url": "https://www.linkedin.com/company/clouddfn-llp/",
+        "thumbnail": "/CDFN.jfif",
+        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
       },
       {
         "organization": "NonceBlox Pvt. Ltd.",
@@ -94,31 +99,8 @@
         "state": "Delhi",
         "country": "India",
         "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/PISB.jfif"
-      },
-      {
-        "organization": "CloudDFN LLP",
-        "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2020-07-20",
-        "endDate": "2021-01-20",
-        "city": "Mumbai",
-        "state": "Maharashtra",
-        "country": "India",
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/CDFN.jfif"
-      },
-      {
-        "organization": "NonceBlox Pvt. Ltd.",
-        "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2021-07-01",
-        "endDate": "2021-10-01",
-        "city": "New Delhi",
-        "state": "Delhi",
-        "country": "India",
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/PISB.jfif"
+        "thumbnail": "/PISB.jfif",
+        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
       }
     ],
     "experience": {
