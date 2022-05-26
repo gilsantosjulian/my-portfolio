@@ -51,9 +51,10 @@ export default function Index({ projects, setTheme }) {
           <Typography variant='h6' className={classes.root}>
             {name}
           </Typography>
-          <IconButton edge='end' color='inherit' onClick={toggleTheme}>
+          {/* TODO: Add theme icon, I need to redesign all the sections with dark theme */}
+          {/* <IconButton edge='end' color='inherit' onClick={toggleTheme}>
             {theme.palette.type === 'dark' ? <Brightness4 /> : <Brightness7 />}
-          </IconButton>
+          </IconButton> */}
         </Toolbar>
       </AppBar>
       <Toolbar className={classes.toolbar} />
