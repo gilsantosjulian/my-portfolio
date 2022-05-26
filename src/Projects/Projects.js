@@ -9,6 +9,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@material-ui/core"
+import { ChevronRight } from '@mui/icons-material';
 import clsx from 'clsx'
 import data from '../../data.json'
 const { experiences } = data
@@ -42,15 +43,22 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '1.8rem',
   },
   project__cta: {
+    alignItems: ' center',
+    border: '1px solid white',
     borderRadius: '3rem',
-    border: '2px solid white',
     color: 'white',
+    display: 'flex',
     fontSize: '1.8rem',
+    height: '4.5rem',
     padding: '1.5rem',
     '&:hover': {
-      backgroundColor: 'red'
-    }
-  }
+      backgroundColor: 'white',
+      color: '#4EA0A8',
+    },
+    '&:hover .project__cta_icon': {
+      fill: '#4EA0A8',
+    },
+  },
 }))
 
 const ProjectCard = ({
@@ -60,6 +68,7 @@ const ProjectCard = ({
   startDate,
   endDate,
   city,
+  projectDescription,
   state,
   country,
   url,
@@ -76,24 +85,26 @@ const ProjectCard = ({
           height="280"
           image={thumbnail}
           alt="green iguana"
-          style={{ borderRadius: '1.5rem', }}
         />
         {/* TODO: apply in a good way the colors */}
         <div className="projects__overlay"></div>
-        <div class="projects__content">
-          <Typography
-            align='center'
-            className={clsx(classes.project__description)}
-            variant='h1'
-          >
-            John Doe
-          </Typography>
-          <Link
-            className={clsx(classes.project__cta)}
-            href="mailto:gilsantosjulian@gmail.com"
-            underline='none'
-          > Visit website
-          </Link>
+        <div className="projects__content-wrapper">
+          <div className="projects__content">
+            <Typography
+              align='center'
+              className={clsx(classes.project__description)}
+              variant='h1'
+            >
+              {projectDescription}
+            </Typography>
+            <Link
+              className={clsx(classes.project__cta)}
+              href="mailto:gilsantosjulian@gmail.com"
+              underline='none'
+            > Visit website
+              <ChevronRight className={clsx([classes.project__cta_icon, 'project__cta_icon'])} fontSize='large' />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
