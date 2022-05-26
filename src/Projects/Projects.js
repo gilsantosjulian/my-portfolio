@@ -12,7 +12,7 @@ import {
 import { ChevronRight } from '@mui/icons-material';
 import clsx from 'clsx'
 import data from '../../data.json'
-const { experiences } = data
+const { experiences, experiencesTitle, experiencesDescription } = data
 
 const useStyles = makeStyles(theme => ({
   cont: {
@@ -130,7 +130,7 @@ const Projects = ({ projects }) => {
             className={clsx([classes.projects__title])}
             variant={smDown ? 'h3' : 'h2'}
           >
-            My Recent Work
+            {experiencesTitle}
           </Typography>
           <Typography
             align='center'
@@ -141,7 +141,7 @@ const Projects = ({ projects }) => {
               margin: '0 auto'
             }}
           >
-            Here are a few design projects I've worked on recently. Want to see more?
+            {experiencesDescription}
             <Link
               href="mailto:gilsantosjulian@gmail.com"
               underline='none'
