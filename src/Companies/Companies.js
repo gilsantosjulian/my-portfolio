@@ -20,14 +20,15 @@ const useStyles = makeStyles(theme => ({
     padding: '14.4rem 2.4rem',
   },
   content__top: {
+    alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     width: '100%',
   },
   projects__title: {
     fontWeight: 'bold',
     marginBottom: '2.4rem',
+    maxWidth: '61.2rem',
   },
   projects__grid: {
     display: 'flex',
@@ -62,7 +63,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const ProjectCard = ({
+const CompanieCard = ({
   organization,
   role,
   type,
@@ -112,13 +113,13 @@ const ProjectCard = ({
   )
 }
 
-const Projects = ({ projects }) => {
+const Companies = ({ projects }) => {
   const classes = useStyles()
   const theme = useTheme()
   const smDown = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <Container component='section'>
+    <Container component='section' style={{ borderTop: '1px solid #E6ECF8' }}>
       <Grid
         container
         justify='center'
@@ -131,30 +132,13 @@ const Projects = ({ projects }) => {
             className={clsx([classes.projects__title])}
             variant={smDown ? 'h3' : 'h2'}
           >
-            {experiencesTitle}
-          </Typography>
-          <Typography
-            align='center'
-            className='description__copy'
-            variant='h5'
-            component='p'
-            style={{
-              margin: '0 auto'
-            }}
-          >
-            {experiencesDescription}
-            <Link
-              href="mailto:gilsantosjulian@gmail.com"
-              underline='none'
-              style={{ color: '#4EA0A8' }}
-            > Email me.
-            </Link>
+            I'm proud to have collaborated with some awesome companies:
           </Typography>
         </div>
 
         <div className={clsx([classes.projects__grid])}>
           {
-            experiences.map((experience => <ProjectCard {...experience} />))
+            experiences.map((experience => <CompanieCard {...experience} />))
           }
         </div>
       </Grid>
@@ -162,4 +146,4 @@ const Projects = ({ projects }) => {
   )
 }
 
-export default Projects
+export default Companies
