@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
   projects__title: {
+    fontWeight: 'bold',
     marginBottom: '2.4rem',
   },
   projects__grid: {
