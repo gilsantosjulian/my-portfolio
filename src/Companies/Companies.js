@@ -3,7 +3,6 @@ import {
   CardMedia,
   Container,
   Grid,
-  Link,
   makeStyles,
   Typography,
   useMediaQuery,
@@ -15,8 +14,9 @@ import data from '../../data.json'
 const { experiences, experiencesTitle, experiencesDescription } = data
 
 const useStyles = makeStyles(theme => ({
-  cont: {
-    paddingBottom: theme.spacing(10),
+  root: {
+    borderTop: '1px solid #E6ECF8',
+    maxWidth: '100%',
     padding: '14.4rem 2.4rem',
   },
   content__top: {
@@ -25,89 +25,37 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     width: '100%',
   },
-  projects__title: {
+  companies__title: {
     fontWeight: 'bold',
     marginBottom: '2.4rem',
     maxWidth: '61.2rem',
   },
-  projects__grid: {
+  companies__grid: {
     display: 'flex',
     flexWrap: 'wrap',
-    padding: '6.4rem 0',
+    paddingTop: '4.8rem',
   },
-  projects__card: {
+  company__card: {
     borderRadius: '1.5rem',
     width: '32%',
-  },
-  project__description: {
-    color: 'white',
-    fontSize: '2.4rem',
-    marginBottom: '1.8rem',
-  },
-  project__cta: {
-    alignItems: ' center',
-    border: '1px solid white',
-    borderRadius: '3rem',
-    color: 'white',
-    display: 'flex',
-    fontSize: '1.8rem',
-    height: '4.5rem',
-    padding: '1.5rem',
-    '&:hover': {
-      backgroundColor: 'white',
-      color: '#4EA0A8',
-    },
-    '&:hover .project__cta_icon': {
-      fill: '#4EA0A8',
-    },
   },
 }))
 
 const CompanieCard = ({
-  organization,
-  role,
-  type,
-  startDate,
-  endDate,
-  city,
-  projectDescription,
-  state,
-  country,
-  url,
   thumbnail
 }, i) => {
   const classes = useStyles()
 
   return (
-    <div className='projects__card'>
-      <div className='projects__figure'>
+    <div className='company__card'>
+      <div className='company__figure'>
         <CardMedia
-          className='projects__image'
+          className='company__image'
           component="img"
           height="280"
           image={thumbnail}
           alt="green iguana"
         />
-        {/* TODO: apply in a good way the colors */}
-        <div className="projects__overlay"></div>
-        <div className="projects__content-wrapper">
-          <div className="projects__content">
-            <Typography
-              align='center'
-              className={clsx(classes.project__description)}
-              variant='h1'
-            >
-              {projectDescription}
-            </Typography>
-            <Link
-              className={clsx(classes.project__cta)}
-              href="mailto:gilsantosjulian@gmail.com"
-              underline='none'
-            > Visit website
-              <ChevronRight className={clsx([classes.project__cta_icon, 'project__cta_icon'])} fontSize='large' />
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   )
@@ -119,7 +67,10 @@ const Companies = ({ projects }) => {
   const smDown = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <Container component='section' style={{ borderTop: '1px solid #E6ECF8' }}>
+    <Container
+      component='section'
+      className={clsx([classes.root, 'root'])}
+    >
       <Grid
         container
         justify='center'
@@ -129,16 +80,16 @@ const Companies = ({ projects }) => {
         <div className={clsx([classes.content__top])}>
           <Typography
             align='center'
-            className={clsx([classes.projects__title])}
+            className={clsx([classes.companies__title])}
             variant={smDown ? 'h3' : 'h2'}
           >
             I'm proud to have collaborated with some awesome companies:
           </Typography>
         </div>
 
-        <div className={clsx([classes.projects__grid])}>
+        <div className={clsx([classes.companies__grid])}>
           {
-            experiences.map((experience => <CompanieCard {...experience} />))
+            experiences.map((company => <CompanieCard {...company} />))
           }
         </div>
       </Grid>
