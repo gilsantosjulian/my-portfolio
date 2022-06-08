@@ -72,8 +72,8 @@ const useStyles = makeStyles(theme => ({
 
 export const About = () => {
   const classes = useStyles()
-  const theme = useTheme();
-  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
+  const theme = useTheme()
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <>
