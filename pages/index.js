@@ -13,6 +13,7 @@ import Skills from '../src/Skills';
 import Projects from '../src/Projects';
 import Projects2 from '../src/Projects/Projects';
 import Companies from '../src/Companies/Companies';
+import Colaborating from '../src/Colaborating/Colaborating';
 import Experience from '../src/Experience';
 import About from '../src/About';
 import AboutMe from '../src/About/About';
@@ -63,6 +64,7 @@ export default function Index({ projects, setTheme }) {
       <AboutMe />
       <Projects2 projects={projects} />
       <Companies companies={companies} />
+      <Colaborating />
       <Skills />
       <Projects projects={projects} />
       <Experience />
