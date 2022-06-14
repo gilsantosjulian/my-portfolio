@@ -20,7 +20,7 @@ import AboutMe from '../src/About/About';
 import data from '../data.json';
 import { darkTheme, lightTheme, primaryTheme } from '../src/theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
-const { companies, name, projects } = data
+const { companies, name, projects, colaborating } = data
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -64,7 +64,7 @@ export default function Index({ projects, setTheme }) {
       <AboutMe />
       <Projects2 projects={projects} />
       <Companies companies={companies} />
-      <Colaborating />
+      <Colaborating colaborating={colaborating} />
       <Skills />
       <Projects projects={projects} />
       <Experience />

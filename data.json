@@ -71,6 +71,14 @@
         "1DBM"
       ]
     },
+    "companies": {
+      "title": "I'm proud to have collaborated with some awesome companies:"
+    },
+    "colaborating": {
+      "title": "Interested in collaborating or investing?",
+      "description": "I’m always open to discussing product design work or partnership opportunities.",
+      "ctaLabel": "Start a conversation"
+    },
     "experiencesTitle": "My Recent Work",
     "experiencesDescription": "Here are a few design projects I've worked on recently. Want to see more?",
     "experiences": [
