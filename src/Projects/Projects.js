@@ -103,7 +103,7 @@ const ProjectCard = ({
               href="mailto:gilsantosjulian@gmail.com"
               underline='none'
             > Visit website
-              <ChevronRight className={clsx([classes.project__cta_icon, 'project__cta_icon'])} fontSize='large' />
+              <ChevronRight fontSize='large' />
             </Link>
           </div>
         </div>
