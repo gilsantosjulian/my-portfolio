@@ -1,0 +1,20 @@
+.root {
+  max-width: 100%;
+}
+
+.company__card {
+  padding: 1.2rem;
+  width: 50%;
+  flex: none;
+}
+
+@media screen and (min-width: 769px) {
+
+  .company__card {
+    flex: none;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
