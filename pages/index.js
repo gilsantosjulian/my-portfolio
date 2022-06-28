@@ -20,7 +20,10 @@ import AboutMe from '../src/About/About';
 import data from '../data.json';
 import { darkTheme, lightTheme, primaryTheme } from '../src/theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
+import Testimonies from '../src/Testimonies/Testimonies';
 const { companies, name, projects, colaborating } = data
+
+import 'bulma/css/bulma.min.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -65,6 +68,7 @@ export default function Index({ projects, setTheme }) {
       <Projects2 projects={projects} />
       <Companies companies={companies} />
       <Colaborating colaborating={colaborating} />
+      <Testimonies />
       <Skills />
       <Projects projects={projects} />
       <Experience />
