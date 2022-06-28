@@ -61,7 +61,7 @@ const CompanieCard = ({
   )
 }
 
-const Companies = ({ projects }) => {
+const Companies = ({ companies }) => {
   const classes = useStyles()
   const theme = useTheme()
   const smDown = useMediaQuery(theme.breakpoints.down('md'))
@@ -83,7 +83,7 @@ const Companies = ({ projects }) => {
             className={clsx([classes.companies__title])}
             variant={smDown ? 'h3' : 'h2'}
           >
-            I'm proud to have collaborated with some awesome companies:
+            {companies.title}
           </Typography>
         </div>
 
