@@ -72,7 +72,33 @@
       ]
     },
     "companies": {
-      "title": "I'm proud to have collaborated with some awesome companies:"
+      "title": "I'm proud to have collaborated with some awesome companies:",
+      "companies": [
+        {
+        "url": "https://d3mrtnr2o5vzcl.cloudfront.net",
+        "thumbnail": "/experiences/c&s.svg",
+        "logo": "/experiences/logos/C&S.png",
+        "alt": "C&S company"
+      },
+      {
+        "url": "https://www.hugeinc.com/",
+        "thumbnail": "experiences/huge-redesign.jpg",
+        "logo": "/experiences/logos/huge.png",
+        "alt": "Huge Inc company"
+      },
+      {
+        "url": "https://admin.transferenciasinmediatas.com",
+        "thumbnail": "/experiences/transfiya.png",
+        "logo": "/experiences/logos/minka.jpeg",
+        "alt": "Transfiya company"
+      },
+      {
+        "url": "https://www.equinauts.com/",
+        "thumbnail": "/experiences/equinauts.jpg",
+        "logo": "/experiences/logos/hexacta.webp",
+        "alt": "Equinauts company"
+      }
+    ]
     },
     "colaborating": {
       "title": "Interested in collaborating or investing?",
@@ -83,32 +109,44 @@
     "experiencesDescription": "Here are a few design projects I've worked on recently. Want to see more?",
     "experiences": [
       {
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/CDFN.jfif",
-        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+        "url": "https://www.hugeinc.com/",
+        "thumbnail": "experiences/huge-redesign.jpg",
+        "logo": "/experiences/logos/huge.svg",
+        "alt": "Huge Inc company",
+        "projectDescription": "Redesign Huge Inc web site (Nextjs, React, TypeScript, Redux-Saga, Storybok)"
       },
       {
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/PISB.jfif",
-        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+        "url": "https://tinbuilding.com/",
+        "thumbnail": "experiences/tinbuilding.jpg",
+        "alt": "Tinbuilding company",
+        "projectDescription": "Tinbuilding Food Market (Nextjs, React, TypeScript, Contentful, Storybok)"
       },
       {
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/CDFN.jfif",
-        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+        "url": "https://admin.transferenciasinmediatas.com",
+        "thumbnail": "/experiences/transfiya.png",
+        "logo": "/experiences/logos/minka.svg",
+        "alt": "Transfiya company",
+        "projectDescription": "Transfiya (React, Vanilla, CSS, HTML5, GPC)"
       },
       {
-        "organization": "NonceBlox Pvt. Ltd.",
-        "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2021-07-01",
-        "endDate": "2021-10-01",
-        "city": "New Delhi",
-        "state": "Delhi",
-        "country": "India",
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
-        "thumbnail": "/PISB.jfif",
-        "projectDescription": "Results-oriented, responsive and flexible full service civil engineering firm."
+        "url": "https://www.equinauts.com/",
+        "thumbnail": "/experiences/equinauts.jpg",
+        "logo": "/experiences/logos/hexacta.svg",
+        "alt": "Equinauts company",
+        "projectDescription": "Equinauts (React, Nodejs, Redux)"
+      },
+      {
+        "url": "https://www.equinauts.com/",
+        "thumbnail": "/experiences/portfolio.jpg",
+        "alt": "Nextwo company",
+        "projectDescription": "My Portfolio - under construction (Nextjs, React, Bulma, CSS)"
+      },
+      {
+        "url": "https://d3mrtnr2o5vzcl.cloudfront.net",
+        "thumbnail": "/experiences/accesoriosyepes.jpg",
+        "logo": "/experiences/logos/accesoriosyepes.svg",
+        "alt": "Accesorios Yepes company",
+        "projectDescription": "Main web page - under construction (Nextjs, React, TypeScript, Contentful, Storybok)"
       }
     ],
     "experience": {
