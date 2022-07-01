@@ -10,8 +10,7 @@ import {
 } from '@material-ui/core';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
-import Projects from '../src/Projects';
-import Projects2 from '../src/Projects/Projects';
+import Projects from '../src/Projects/Projects';
 import Companies from '../src/Companies/Companies';
 import Colaborating from '../src/Colaborating/Colaborating';
 import Experience from '../src/Experience';
@@ -23,7 +22,7 @@ import { Brightness4, Brightness7 } from '@material-ui/icons';
 import Testimonies from '../src/Testimonies/Testimonies';
 const { companies, name, projects, colaborating } = data
 
-import 'bulma/css/bulma.min.css';
+// import 'bulma/css/bulma.min.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -65,14 +64,9 @@ export default function Index({ projects, setTheme }) {
       <Toolbar className={classes.toolbar} />
       <Landing />
       <AboutMe />
-      <Projects2 projects={projects} />
+      <Projects projects={projects} />
       <Companies companies={companies} />
       <Colaborating colaborating={colaborating} />
-      <Testimonies />
-      <Skills />
-      <Projects projects={projects} />
-      <Experience />
-      <About />
     </div>
   );
 }
