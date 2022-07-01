@@ -63,6 +63,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const ProjectCard = ({
+  alt,
   organization,
   role,
   type,
@@ -85,7 +86,7 @@ const ProjectCard = ({
           component="img"
           height="280"
           image={thumbnail}
-          alt="green iguana"
+          alt={alt}
         />
         {/* TODO: apply in a good way the colors */}
         <div className="projects__overlay"></div>
@@ -100,7 +101,8 @@ const ProjectCard = ({
             </Typography>
             <Link
               className={clsx(classes.project__cta)}
-              href="mailto:gilsantosjulian@gmail.com"
+              href={url}
+              target="_blank"
               underline='none'
             > Visit website
               <ChevronRight fontSize='large' />
