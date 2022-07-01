@@ -8,10 +8,11 @@ import {
   useMediaQuery,
   useTheme,
 } from "@material-ui/core"
+import Image from 'next/image'
 import { ChevronRight } from '@mui/icons-material';
 import clsx from 'clsx'
 import data from '../../data.json'
-const { experiences, experiencesTitle, experiencesDescription } = data
+const { companies } = data
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,25 +40,31 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '1.5rem',
     width: '32%',
   },
+  company__figure: {
+    textAlign: 'center'
+  },
 }))
 
 const CompanieCard = ({
-  thumbnail
+  logo,
+  alt,
 }, i) => {
   const classes = useStyles()
 
   return (
-    <div className='company__card'>
-      <div className='company__figure'>
-        <CardMedia
-          className='company__image'
-          component="img"
-          height="280"
-          image={thumbnail}
-          alt="green iguana"
-        />
-      </div>
-    </div>
+    <>
+      {logo && (<div className='company__card'>
+        <div className={clsx([classes.company__figure])}>
+          <Image
+            src={logo}
+            alt={alt}
+            width='120'
+            height='120'
+          />
+        </div>
+      </div>)}
+    </>
+
   )
 }
 
@@ -89,7 +96,7 @@ const Companies = ({ companies }) => {
 
         <div className={clsx([classes.companies__grid])}>
           {
-            experiences.map((company => <CompanieCard {...company} />))
+            companies.companies.map((company => <CompanieCard {...company} />))
           }
         </div>
       </Grid>
