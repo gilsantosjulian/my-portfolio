@@ -9,6 +9,7 @@ import {
   useTheme
 } from '@material-ui/core';
 import Landing from '../src/Landing';
+import Footer from '../src/Footer';
 import Skills from '../src/Skills';
 import Projects from '../src/Projects/Projects';
 import Companies from '../src/Companies/Companies';
@@ -67,6 +68,7 @@ export default function Index({ projects, setTheme }) {
       <Projects projects={projects} />
       <Companies companies={companies} />
       <Colaborating colaborating={colaborating} />
+      <Footer />
     </div>
   );
 }
