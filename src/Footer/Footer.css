@@ -1,6 +1,11 @@
 .footer {
   background-color: #4EA0A8;
   padding-top: 8rem;
+  padding: 4rem;
+}
+
+.has-text-centered {
+  text-align: center;
 }
 
 .title {
