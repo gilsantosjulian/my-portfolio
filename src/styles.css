@@ -2,6 +2,7 @@
 @import "./Projects/Projects.css";
 @import "./Companies/Companies.css";
 @import "./Testimonies/Testimonies.css";
+@import "./Footer/Footer.css";
 
 html {
   font-size: 62.5%; /* Relative font size. 1px -> 0.1rem */
