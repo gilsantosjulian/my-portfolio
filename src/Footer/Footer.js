@@ -4,6 +4,9 @@ const Footer = () => {
   return (
     <footer class="footer section is-primary is-small has-text-centered">
       <div class="content has-text-centered">
+        <a href='/'>
+          <img class="logo" height="52px" src='/white-logo.png'></img>
+        </a>
         <div class="columns is-centered">
           <div class="column is-one-third">
             <h1 class="title is-size-4-touch">Enjoying, learning, &amp; sharing my human skills.</h1>

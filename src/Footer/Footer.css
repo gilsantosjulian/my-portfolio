@@ -10,4 +10,10 @@
 
 .title {
   color: white !important;
+  padding: 3.2rem;
+  margin: 0 !important;
+}
+
+.logo {
+  height: 52px;
 }
