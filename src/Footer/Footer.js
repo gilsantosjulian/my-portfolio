@@ -2,6 +2,8 @@ import React from 'react'
 
 import { ICON_PATHS } from './constants'
 
+import data from '../../data.json'
+
 const RenderSocialIcon = ({
   href,
   name,
@@ -34,6 +36,10 @@ const RenderSocialIcon = ({
   </a>
 
 const Footer = () => {
+  const { about, landing } = data
+  const { mainSkills } = about
+  const { professionalDetails } = landing
+
   return (
     <footer class="footer section is-primary is-small has-text-centered">
       <div class="content has-text-centered">
@@ -48,9 +54,9 @@ const Footer = () => {
         <div class="social-icons">
           <p class="field">
             {RenderSocialIcon({ href: "", name: 'twitter', iconPath: ICON_PATHS.TWITTER })}
-            {RenderSocialIcon({ href: "", name: 'linkedin-in', iconPath: ICON_PATHS.LINKEDIN })}
+            {RenderSocialIcon({ href: mainSkills[0].link, name: 'linkedin-in', iconPath: ICON_PATHS.LINKEDIN })}
             {/* {RenderSocialIcon({ href: "", name: 'product-hunt', iconPath: ICON_PATHS.LINKEDIN })} */}
-            {RenderSocialIcon({ href: "", name: 'envelope', iconPath: ICON_PATHS.EMAIL })}
+            {RenderSocialIcon({ href: professionalDetails[2].link, name: 'envelope', iconPath: ICON_PATHS.EMAIL })}
           </p>
 
         </div>
