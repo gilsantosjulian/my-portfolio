@@ -17,6 +17,7 @@ import Colaborating from '../src/Colaborating/Colaborating';
 import Experience from '../src/Experience';
 import About from '../src/About';
 import AboutMe from '../src/About/About';
+import Cta from '../src/Cta/Cta';
 import data from '../data.json';
 import { darkTheme, lightTheme, primaryTheme } from '../src/theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
@@ -68,6 +69,7 @@ export default function Index({ projects, setTheme }) {
       <Projects projects={projects} />
       <Companies companies={companies} />
       <Colaborating colaborating={colaborating} />
+      <Cta />
       <Footer />
     </div>
   );
