@@ -6,19 +6,43 @@
   color: white;
   padding: 3.5rem 2rem;
   margin-top: -9rem;
-  background-color: #141c3a;
-  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
+  background-color: #3f4352;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #3f4352;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.box p {
+  font-size: 17px;
 }
 
 /* TODO: remove importants and inject bulma styles */
 .button {
   background-color: transparent !important;
-  border-color: #4EA0A8 !important;
-  color: #4EA0A8 !important;
+  border-color: white !important;
+  color: white !important;
+  padding: 1.25em 2em !important;
+  height: 54px !important;
+}
+
+.button span {
+  font-size: 20px;
 }
 
 .button:hover {
   background-color: #4EA0A8 !important;
   border-color: #4EA0A8 !important;
   color: #fff !important;
+}
+
+@media screen and (min-width: 769px) {
+  .section.call-to-action .box p {
+    font-size: 18px;
+  }
+
+  .section.call-to-action .box {
+    padding: 56px 20px;
+  }
 }
