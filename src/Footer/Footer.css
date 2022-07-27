@@ -22,14 +22,20 @@
   margin: 0 auto 3rem;
 }
 
-.social-icons a.button {
+.social-icons a.social-button {
   background-color: transparent;
-  color: white;
+  color: white !important;
   border-radius: 100%;
   margin: 0 0.2rem;
   height: 47px;
   width: 47px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.social-icons a.social-button:hover {
+  background: #ffffff !important;
+  color: #4EA0A8 !important;
+  border: 2px solid white;
 }
 
 @media screen and (min-width: 769px) {
@@ -37,7 +43,7 @@
     margin: 0 auto 3.5rem;
   }
 
-  .social-icons a.button {
+  .social-icons a.social-button {
     margin: 0 0.8rem;
   }
 }
