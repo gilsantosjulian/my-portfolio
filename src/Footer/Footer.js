@@ -10,8 +10,9 @@ const RenderSocialIcon = ({
   iconPath,
 }) =>
   <a
-    class="button is-medium"
+    class="button social-button is-medium"
     href={href}
+    key={`${name}-${href}`}
     target="_blank"
   >
     <span class="icon is-small">
