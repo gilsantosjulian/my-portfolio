@@ -110,7 +110,7 @@
     "experiences": [
       {
         "url": "https://www.hugeinc.com/",
-        "thumbnail": "experiences/huge-redesign.jpg",
+        "thumbnail": "/experiences/HugeRedesign.png",
         "logo": "/experiences/logos/huge.svg",
         "alt": "Huge Inc company",
         "projectDescription": "Redesign Huge Inc web site (Nextjs, React, TypeScript, Redux-Saga, Storybok)"
