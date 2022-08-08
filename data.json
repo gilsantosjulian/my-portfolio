@@ -97,6 +97,12 @@
         "thumbnail": "/experiences/equinauts.jpg",
         "logo": "/experiences/logos/hexacta.webp",
         "alt": "Equinauts company"
+      },
+      {
+        "url": "https://www.accesoriosyepes.com/",
+        "thumbnail": "/experiences/accesoriosYepes.png",
+        "logo": "/experiences/logos/accesoriosYepes.png",
+        "alt": "Accesorios Yepes"
       }
     ]
     },
@@ -117,33 +123,33 @@
       },
       {
         "url": "https://tinbuilding.com/",
-        "thumbnail": "experiences/tinbuilding.jpg",
+        "thumbnail": "experiences/hugetinbuilding.png",
         "alt": "Tinbuilding company",
         "projectDescription": "Tinbuilding Food Market (Nextjs, React, TypeScript, Contentful, Storybok)"
       },
       {
         "url": "https://admin.transferenciasinmediatas.com",
-        "thumbnail": "/experiences/transfiya.png",
+        "thumbnail": "/experiences/transfiyaTwo.png",
         "logo": "/experiences/logos/minka.svg",
         "alt": "Transfiya company",
         "projectDescription": "Transfiya (React, Vanilla, CSS, HTML5, GPC)"
       },
       {
         "url": "https://www.equinauts.com/",
-        "thumbnail": "/experiences/equinauts.jpg",
+        "thumbnail": "/experiences/Equinauts.png",
         "logo": "/experiences/logos/hexacta.svg",
         "alt": "Equinauts company",
         "projectDescription": "Equinauts (React, Nodejs, Redux)"
       },
       {
         "url": "https://www.equinauts.com/",
-        "thumbnail": "/experiences/portfolio.jpg",
+        "thumbnail": "/experiences/Portfolio.png",
         "alt": "Nextwo company",
         "projectDescription": "My Portfolio - under construction (Nextjs, React, Bulma, CSS)"
       },
       {
         "url": "https://d3mrtnr2o5vzcl.cloudfront.net",
-        "thumbnail": "/experiences/accesoriosyepes.jpg",
+        "thumbnail": "/experiences/AccesoriosYepes.png",
         "logo": "/experiences/logos/accesoriosyepes.svg",
         "alt": "Accesorios Yepes company",
         "projectDescription": "Main web page - under construction (Nextjs, React, TypeScript, Contentful, Storybok)"
