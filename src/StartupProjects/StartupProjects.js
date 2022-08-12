@@ -1,17 +1,71 @@
 import React from 'react'
+import clsx from 'clsx';
+
+import {
+  Box,
+  Container,
+  makeStyles,
+  Typography,
+  useTheme,
+  useMediaQuery,
+  SvgIcon,
+} from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.type === 'dark' ? 'white' : '#4EA0A8',
+    maxWidth: '100%',
+    padding: 0,
+  },
+  description__title: {
+    fontWeight: 'bold',
+    marginBottom: '2.4rem',
+  },
+  description__copy: {
+    fontWeight: 'bold',
+    margin: '0 auto',
+  },
+  description__container: {
+    color: theme.palette.type !== 'dark' ? 'white' : '#212121',
+  },
+}))
 
 const StartupProjects = () => {
+  const classes = useStyles()
+  const theme = useTheme()
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
-    <section class="section is-medium is-primary has-text-centered is-long-ish">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-three-fifths">
-            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Startup Projects</h1>
-            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.</h2>
-          </div>
+    <Container
+      className={clsx([classes.root, 'root'])}
+      component='section'
+    >
+      <div
+        className={clsx([classes.description__container, 'description__container'])}
+      >
+        <div className='description__content'>
+          <Typography
+            align='center'
+            className={clsx([classes.description__title, 'description__title'])}
+            variant={smDown ? 'h3' : 'h2'}
+          >
+            title
+          </Typography>
+          <Typography
+            align='center'
+            className={clsx([classes.description__copy, 'description__copy'])}
+            variant='h5'
+            component='p'
+            style={{
+              margin: '0 auto',
+              fontWeight: 'bold',
+            }}
+          >
+            description
+          </Typography>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }
 
